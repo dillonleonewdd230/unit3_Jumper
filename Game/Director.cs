@@ -14,7 +14,8 @@ public class Director
       private VideoService videoservice = new VideoService();
       private Jumper jumper = new Jumper();
       public bool GameOver = false;
-      
+      public char Guess = 'n';
+
    // Run Game: controls the gameplay loop.
    private void RunGame()
    {
@@ -22,27 +23,28 @@ public class Director
 
       while (!GameOver)
       {
-         Guess = GetInputs();
+         GetInputs();
          DoUpdates();
          DoOutputs();
       }
    }
 
    // Get Input: take a guess
-   private char GetInputs()
+   private void GetInputs()
    {
-      private char Guess = videoservice.ReadText("Guess a letter [a...z]: ");  
-      return Guess;
+      Guess = videoservice.ReadText("Guess a letter [a...z]: ");  
    }
    
    //DoUpdates
    private void DoUpdates()
    {
-      
+      word.UpdateWord();
+      jumper.UpdateJumper();
    }
    
    private void DoOutputs()
    {
-      videoservice.
+      videoservice.WriteText(word.ShownWord());
+      videoservice.WriteText(jumper.Jumper())
    }   
 }

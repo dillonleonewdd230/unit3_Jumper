@@ -24,7 +24,7 @@ public class Word{
     private int NumChar = 0;
     private string[] words = {"Volvo", "BMW"};
     private string hiddenWord = "-";
-  
+    private string ShownWord = "-";
 
 // Methods
     //Get word from list
@@ -45,7 +45,11 @@ public class Word{
             }
     }
 
-    // Guess a
+    // create shown word list
+
+    // update shown word 
+
+    // print shown word
             
     }
 }
