@@ -48,7 +48,6 @@ Classes:
      -attributes:
      -methods:
         GetInputs
-            display jumper
             take in guess
         DoUpdates
             check if guess is correct
@@ -56,12 +55,13 @@ Classes:
             update jumper
         DoOutputs
             display word
+            display jumper
             
             
 
         
 
-    -Word list: Dillon
+    -Word: Nathan
      -responsibility: Generate a random word 
      -attributes: list of possible words?
      -methods:
@@ -86,7 +86,7 @@ Classes:
         
      -methods:
 
-    - characterChecker: Nathan
+    - Word Generator: Dillon
      -responsibility: 
      -attributes:
         
