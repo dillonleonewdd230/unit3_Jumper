@@ -15,17 +15,6 @@ n # unit3_Jumper
 -solid advice for anything honestly
 testify
 
-I think this week is just making the plan of attack then next week we have dday lol
-
-
-We might just need to set the attributes and methods by thursday so we can start coding on tuesday
-Yeah I agree. Do we want to make the faux code on here or on a director file?
-
-Probably here will be the best, last time when we used place holders on the code it became difficult to tell what was the original idea and what is the new approach, if that makes sense...
-
-Sweet. 
-
-Im down
 ---------------------------------------------------------------------------------------------------------
 Game specs:
 The puzzle is a secret word randomly chosen from a list.

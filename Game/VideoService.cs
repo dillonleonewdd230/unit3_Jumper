@@ -1,3 +1,5 @@
+using System;
+
 namespace unit3_Jumper.Game
 {
     /// <summary>
@@ -7,7 +9,7 @@ namespace unit3_Jumper.Game
     /// terminal.
     /// </para>
     /// </summary>
-    public class VideoService()
+    public class VideoService
     {
         /// <summary>
         /// Create an instance of VideoService
@@ -18,11 +20,23 @@ namespace unit3_Jumper.Game
 
         /// <summary>
         /// Display the given text on the terminal
-        /// <param name ="prompt"> The given text </param>
+        /// <param name="prompt"> The given text </param>
         /// </summary> 
-        public string ReadText(string prompt)
+        public string WriteText (string prompt)
         {
             return Console.WriteLine(prompt);
+        }
+
+        /// <summary>
+        /// Get input from the terminal. Directs the user with the given prompt.
+        /// </summary>
+        /// <param name="prompt"> The given prompt </param>
+        public char ReadText(string prompt)
+        {
+            Console.WriteLine(prompt);
+            string UserInput = Console.ReadLine();
+            PlayerGuess = char.Parse(UserInput);
+
         }
 
     }
