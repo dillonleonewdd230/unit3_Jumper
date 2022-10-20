@@ -107,18 +107,29 @@ namespace unit3_Jumper.Game{
             return JumperDisplay;
         }
 
-        public void UpdateJumper(bool Guess){
+        public string UpdateJumper(bool Guess){
             // this method takes in whether or not the guess is correct
             // and uses MakeJumperDisplay to return what VideoService should write
             if (Guess == true){
                 this.score += 0;
-                MakeJumperDisplay();
+                //MakeJumperDisplay();
             }
             else if (Guess == false){
                 this.score -= 1;
-                MakeJumperDisplay();
+                //MakeJumperDisplay();
             }
-            
+            return MakeJumperDisplay();
         }
     }
 }
+
+
+// Hey, Emma, I forgot we also needed code to decide when the game ends.
+// Could you write a method that goes something like this? thanks! -Madison
+// method CheckIfDead
+// parameters: JumperDisplay (received from director)
+// returns a bool
+// if JumperDisplay = JumperStatusDead
+// return true
+// else
+// return false
