@@ -1,83 +1,47 @@
-n # unit3_Jumper
-    ____
-   /____\
-   \    /
-    \  /
-     O
-    /|\
-    / \
+# Jumper
+Welcome to Jumper! This is a game in which the player seeks to solve a puzzle by guessing the letters of a secret word one at a time. Think Hangman, but high-altitude.
+  ____________               
+ /            \         
+|              |               
+|              |                       
+ \____________/                           
+   \  |   |  /                          
+    | |   | |                           
+     \|   |/                             
+      o 0 o                              
+       \|/                               
+        |                                    
+       / \                                    
  
  ^^^^^^^^^^
-"Getters good! Setters dangerous!" -- Bro. Manley
-"Just ask yourself, Why are you doing it?" -- Bro. Manley
-"But, someone still dies... that's good" -- Bro. Manley
 
--solid advice for anything honestly
-testify
+--------------------
+# Getting Started:
+--------------------
+Make sure you have dotnet 6.0 or newer installed on your machine. Open a terminal and browse to the project's root folder. Start the program by running the following commands:
 
----------------------------------------------------------------------------------------------------------
-Game specs:
-The puzzle is a secret word randomly chosen from a list.
-The player guesses a letter in the puzzle.
-If the guess is correct, the letter is revealed.
-If the guess is incorrect, a line is cut on the player's parachute.
-If the puzzle is solved the game is over.
-If the player has no more parachute the game is over.
+dotnet build
+dotnet run
 
-The program must also meet the following requirements.
+----------------------------
+# Project Structure
+----------------------------
+The project files and folders are organized as follows:
+root
++-- Director           (runs the game)
++-- Jumper             (class to create the Jumper and keep track of lives)
++-- Word               (class to keep track of the word and what the player has guessed)
++-- VideoService       (class to reduce lines of code in Director and improve visibility)
++-- Program            (program entry point)
++-- README.md          (general info)
++-- Game.unit3_Jumper  (dotnet project)
 
-The program must include a README file.
-The program must include class and method comments.
-The program must have at least four classes.
-The program must remain true to game play described in the overview.
-
-Classes:
-    -Director: Justin
-     -responsibility: 'guide the process of the game', 'calling the other classes in the right order'
-     -attributes:
-     -methods:
-        GetInputs
-            take in guess
-        DoUpdates
-            check if guess is correct
-                take off layer of parachute or add letter to word display
-            update jumper
-        DoOutputs
-            display word
-            display jumper
-            
-            
-
-        
-
-    -Word: Nathan
-     -responsibility: Generate a random word 
-     -attributes: list of possible words?
-     -methods:
-        selectWord
-        isGuessCorrect
-        GetRandomWord();
-        -tell how many letters within word
-        -insert letters from guess
-
-    -jumper: Emma
-     -responsibility: 
-        keep track of current life of jumper
-     -attributes:
-        lives
-     -methods
-        update jumper
-        display jumper
-
-    - TerminalService; Andre
-     -responsibility: 
-     -attributes:
-        
-     -methods:
-
-    - Word Generator: Dillon
-     -responsibility: 
-     -attributes:
-        
-     -methods:
-    
+----------------------------
+# Authors
+----------------------------
+* Dillon Leone
+* Andre Regino
+* Emma Quackenbush
+* Nathan Marble
+* Justin Paystrup
+* Madison Brown

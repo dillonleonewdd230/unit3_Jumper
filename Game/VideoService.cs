@@ -20,22 +20,26 @@ namespace unit3_Jumper.Game
 
         /// <summary>
         /// Display the given text on the terminal
-        /// <param name="prompt"> The given text </param>
+        /// <param name="text"> The given text </param>
         /// </summary> 
-        public string WriteText (string prompt)
+        public void WriteText(string text)
         {
-            return Console.WriteLine(prompt);
+            Console.WriteLine(text);
         }
 
         /// <summary>
         /// Get input from the terminal. Directs the user with the given prompt.
         /// </summary>
         /// <param name="prompt"> The given prompt </param>
+        /// <returns> Inputted text as character </retrurns>
         public char ReadText(string prompt)
         {
             Console.WriteLine(prompt);
-            string UserInput = Console.ReadLine();
-            PlayerGuess = char.Parse(UserInput);
+            string  UserInput = Console.ReadLine();
+            char PlayerGuess = char.Parse(UserInput);
+            return PlayerGuess;
+            
+        
 
         }
 
