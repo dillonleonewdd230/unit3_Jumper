@@ -7,7 +7,7 @@ namespace unit3_Jumper
     /// </summary>
     class Program
     {
-        private Director director = new Director;
+        private Director director = new Director();
 
     }
 
