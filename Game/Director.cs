@@ -14,26 +14,27 @@ public class Director
       private Word word = new Word();
       private VideoService videoservice = new VideoService();
       private Jumper jumper = new Jumper();
-      public bool GameOver = false;
-      public char Guess = 'n';
-      public bool GuessCorrect = false;
-      public string NewShownWord = "";
-      public string OldShownWord = "";
-      public string CurrentJumper = "";
+      private bool GameOver = false;
+      private char Guess = 'n';
+      private bool GuessCorrect = false;
+      private string NewShownWord = "";
+      private string OldShownWord = "";
+      private string CurrentJumper = "";
 
    // Run Game: controls the gameplay loop.
-   private void RunGame()
+   public void RunGame()
    {
       // Generates the random word to be guessed.
       word.genRandomWord();
       // Gets the blank word to compare the first guess to.
       OldShownWord = word.GetShownWord();
-
+      videoservice.WriteText(OldShownWord);
+      string HiddenWord = word.GetHiddenWord();
       // Runs the game 
       while (!GameOver)
       {
          GetInputs();
-         DoUpdates();
+         DoUpdates(HiddenWord);
          DoOutputs();
       }
    }
@@ -46,7 +47,7 @@ public class Director
    
    //Do Updates: Determines the results after the user takes a guess,
    //and updates the shown word and jumper actor.
-   private void DoUpdates()
+   private void DoUpdates(string HiddenWord)
    {
       word.UpdateShownWord(Guess);
       NewShownWord = word.GetShownWord();
@@ -60,13 +61,21 @@ public class Director
       }
       OldShownWord = NewShownWord;
       CurrentJumper = jumper.UpdateJumper(GuessCorrect);
-
+      GameOver = jumper.CheckIfDead();
+      if( HiddenWord == NewShownWord)
+      {
+         CurrentJumper = jumper.JumperWon;
+      }
+      if (CurrentJumper == jumper.JumperWon) 
+      {
+         GameOver = true;
+      }
    }
-   
+
    // Do Outputs: displays results of the turn to the terminal.
    private void DoOutputs()
    {
-      videoservice.WriteText(word.GetShownWord());
+      videoservice.WriteText(NewShownWord);
       videoservice.WriteText(CurrentJumper);
    }   
 }

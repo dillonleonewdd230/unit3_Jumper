@@ -7,8 +7,23 @@ namespace unit3_Jumper
     /// </summary>
     class Program
     {
-        private Director director = new Director;
 
+        static void Main(string[] args)
+            {
+            Director director = new Director();
+            director.RunGame();
+            }
     }
 
+    
+
 }
+
+
+
+
+/// static void Main(string[] args)
+      //  {
+            ///Director director = new Director();
+            ///director.StartGame();
+      //  }

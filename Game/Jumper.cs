@@ -82,6 +82,13 @@ namespace unit3_Jumper.Game{
             "
 
         );
+        public string JumperWon = (
+            @"o 0 o
+ \|/
+  |
+ / \
+^^^^^"
+        );
 
 
         // methods: UpdateJumper, MakeJumperDisplay
@@ -120,16 +127,13 @@ namespace unit3_Jumper.Game{
             }
             return MakeJumperDisplay();
         }
+        public bool CheckIfDead(){
+            if (score == 0){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
     }
 }
-
-
-// Hey, Emma, I forgot we also needed code to decide when the game ends.
-// Could you write a method that goes something like this? thanks! -Madison
-// method CheckIfDead
-// parameters: JumperDisplay (received from director)
-// returns a bool
-// if JumperDisplay = JumperStatusDead
-// return true
-// else
-// return false
