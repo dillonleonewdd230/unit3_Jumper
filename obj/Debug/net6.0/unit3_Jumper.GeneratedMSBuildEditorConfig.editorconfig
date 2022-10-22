@@ -7,4 +7,8 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = unit3_Jumper
-build_property.ProjectDir = c:\Users\14058\Documents\cse_week6\unit3_Jumper\
+<<<<<<< HEAD
+build_property.ProjectDir = C:\Users\Metalurgist\Documents\School\CS210\unit3_Jumper\unit3_Jumper-1\
+=======
+build_property.ProjectDir = c:\Users\Metalurgist\Documents\School\CS210\unit3_Jumper\
+>>>>>>> 36089a4924087d4844e07ce04541a998dc68c207

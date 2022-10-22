@@ -37,11 +37,11 @@ namespace unit3_Jumper.Game
             Console.WriteLine(prompt);
             string  UserInput = Console.ReadLine();
             char PlayerGuess = char.Parse(UserInput);
+            PlayerGuess = char.ToLower(PlayerGuess);
             return PlayerGuess;
             
         
 
         }
-
     }
 }

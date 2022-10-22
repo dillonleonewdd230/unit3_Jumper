@@ -1,0 +1,15 @@
+C:\Users\Metalurgist\Documents\School\CS210\unit3_Jumper\unit3_Jumper-1\obj\Debug\net6.0\unit3_Jumper.csproj.AssemblyReference.cache
+C:\Users\Metalurgist\Documents\School\CS210\unit3_Jumper\unit3_Jumper-1\obj\Debug\net6.0\unit3_Jumper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Metalurgist\Documents\School\CS210\unit3_Jumper\unit3_Jumper-1\obj\Debug\net6.0\unit3_Jumper.AssemblyInfoInputs.cache
+C:\Users\Metalurgist\Documents\School\CS210\unit3_Jumper\unit3_Jumper-1\obj\Debug\net6.0\unit3_Jumper.AssemblyInfo.cs
+C:\Users\Metalurgist\Documents\School\CS210\unit3_Jumper\unit3_Jumper-1\obj\Debug\net6.0\unit3_Jumper.csproj.CoreCompileInputs.cache
+C:\Users\Metalurgist\Documents\School\CS210\unit3_Jumper\unit3_Jumper-1\bin\Debug\net6.0\unit3_Jumper.exe
+C:\Users\Metalurgist\Documents\School\CS210\unit3_Jumper\unit3_Jumper-1\bin\Debug\net6.0\unit3_Jumper.deps.json
+C:\Users\Metalurgist\Documents\School\CS210\unit3_Jumper\unit3_Jumper-1\bin\Debug\net6.0\unit3_Jumper.runtimeconfig.json
+C:\Users\Metalurgist\Documents\School\CS210\unit3_Jumper\unit3_Jumper-1\bin\Debug\net6.0\unit3_Jumper.dll
+C:\Users\Metalurgist\Documents\School\CS210\unit3_Jumper\unit3_Jumper-1\bin\Debug\net6.0\unit3_Jumper.pdb
+C:\Users\Metalurgist\Documents\School\CS210\unit3_Jumper\unit3_Jumper-1\obj\Debug\net6.0\unit3_Jumper.dll
+C:\Users\Metalurgist\Documents\School\CS210\unit3_Jumper\unit3_Jumper-1\obj\Debug\net6.0\refint\unit3_Jumper.dll
+C:\Users\Metalurgist\Documents\School\CS210\unit3_Jumper\unit3_Jumper-1\obj\Debug\net6.0\unit3_Jumper.pdb
+C:\Users\Metalurgist\Documents\School\CS210\unit3_Jumper\unit3_Jumper-1\obj\Debug\net6.0\unit3_Jumper.genruntimeconfig.cache
+C:\Users\Metalurgist\Documents\School\CS210\unit3_Jumper\unit3_Jumper-1\obj\Debug\net6.0\ref\unit3_Jumper.dll
